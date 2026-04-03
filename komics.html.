@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карл Метрсон: Путь мести — Комикс</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; }
+    .page { display:none; text-align:center; }
+    .page img { max-width:90%; height:auto; margin-top:20px; }
+    .nav { margin:20px; }
+    button { padding:10px 20px; margin:5px; background:#444; color:#fff; border:none; cursor:pointer; }
+    button:hover { background:#666; }
+  </style>
+</head>
+<body>
+
+<div id="title" class="page" style="display:block;">
+  <h1>Карл Метрсон: Путь мести</h1>
+  <button onclick="showPage(1)">Начать</button>
+</div>
+
+<div id="page1" class="page">
+  <h2>Часть 1 — Груз, который нельзя потерять</h2>
+  <img src="https://copilot.microsoft.com/shares/zqhCPCV7vZyhkiSez6Dv3" alt="Комикс страница 1">
+  <div class="nav">
+    <button onclick="showPage(0)">Назад</button>
+    <button onclick="showPage(2)">Вперёд</button>
+  </div>
+</div>
+
+<div id="page2" class="page">
+  <h2>Часть 2 — Сделка Теда</h2>
+  <img src="https://copilot.microsoft.com/shares/cDF5DqcREm7tjW85uTrmD" alt="Комикс страница 2">
+  <div class="nav">
+    <button onclick="showPage(1)">Назад</button>
+    <button onclick="showPage(3)">Вперёд</button>
+  </div>
+</div>
+
+<div id="page3" class="page">
+  <h2>Часть 3 — Погоня по Гриндер‑Сити</h2>
+  <img src="https://copilot.microsoft.com/shares/TfzPYHLCmaFHP3KeBppcr" alt="Комикс страница 3">
+  <div class="nav">
+    <button onclick="showPage(2)">Назад</button>
+    <button onclick="showPage(0)">В начало</button>
+  </div>
+</div>
+
+<script>
+function showPage(n) {
+  document.querySelectorAll('.page').forEach(p => p.style.display='none');
+  if(n===0) document.getElementById('title').style.display='block';
+  else document.getElementById('page'+n).style.display='block';
+}
+</script>
+
+</body>
+</html>
