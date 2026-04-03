@@ -2,49 +2,75 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Карл Метрсон: Путь мести — Комикс</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карл Метрсон: Путь мести — Акт 1</title>
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; }
-    .page { display:none; text-align:center; }
+    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; text-align:center; }
+    h1 { margin:20px; }
+    h2 { margin:10px; color:#0ff; }
+    .page { display:none; }
     .page img { max-width:90%; height:auto; margin-top:20px; }
     .nav { margin:20px; }
     button { padding:10px 20px; margin:5px; background:#444; color:#fff; border:none; cursor:pointer; }
     button:hover { background:#666; }
+    .intro { max-width:800px; margin:20px auto; font-size:18px; line-height:1.5; }
   </style>
 </head>
 <body>
 
-<div id="title" class="page" style="display:block;">
   <h1>Карл Метрсон: Путь мести</h1>
-  <button onclick="showPage(1)">Начать</button>
-</div>
-
-<div id="page1" class="page">
-  <h2>Часть 1 — Груз, который нельзя потерять</h2>
-  <img src="https://copilot.microsoft.com/shares/zqhCPCV7vZyhkiSez6Dv3" alt="Комикс страница 1">
-  <div class="nav">
-    <button onclick="showPage(0)">Назад</button>
-    <button onclick="showPage(2)">Вперёд</button>
+  <div class="intro">
+    <p>Это цифровой комикс, который раскрывает сюжет будущей игры.  
+    В первом акте Карл сталкивается с предательством, погонями и тайными сделками.  
+    Каждая страница — часть истории, которая ведёт к основному конфликту игры.</p>
   </div>
-</div>
 
-<div id="page2" class="page">
-  <h2>Часть 2 — Сделка Теда</h2>
-  <img src="https://copilot.microsoft.com/shares/cDF5DqcREm7tjW85uTrmD" alt="Комикс страница 2">
-  <div class="nav">
-    <button onclick="showPage(1)">Назад</button>
-    <button onclick="showPage(3)">Вперёд</button>
+  <div id="title" class="page" style="display:block;">
+    <h2>Акт 1 — Начало</h2>
+    <button onclick="showPage(1)">Начать читать</button>
   </div>
-</div>
 
-<div id="page3" class="page">
-  <h2>Часть 3 — Погоня по Гриндер‑Сити</h2>
-  <img src="https://copilot.microsoft.com/shares/TfzPYHLCmaFHP3KeBppcr" alt="Комикс страница 3">
-  <div class="nav">
-    <button onclick="showPage(2)">Назад</button>
-    <button onclick="showPage(0)">В начало</button>
+  <div id="page1" class="page">
+    <h2>Часть 1</h2>
+    <img src="1.png" alt="Страница 1">
+    <div class="nav"><button onclick="showPage(0)">Назад</button><button onclick="showPage(2)">Вперёд</button></div>
   </div>
-</div>
+
+  <div id="page2" class="page">
+    <h2>Часть 2</h2>
+    <img src="2.png" alt="Страница 2">
+    <div class="nav"><button onclick="showPage(1)">Назад</button><button onclick="showPage(3)">Вперёд</button></div>
+  </div>
+
+  <div id="page3" class="page">
+    <h2>Часть 3</h2>
+    <img src="3.png" alt="Страница 3">
+    <div class="nav"><button onclick="showPage(2)">Назад</button><button onclick="showPage(4)">Вперёд</button></div>
+  </div>
+
+  <div id="page4" class="page">
+    <h2>Часть 4</h2>
+    <img src="4.png" alt="Страница 4">
+    <div class="nav"><button onclick="showPage(3)">Назад</button><button onclick="showPage(5)">Вперёд</button></div>
+  </div>
+
+  <div id="page5" class="page">
+    <h2>Часть 5</h2>
+    <img src="5.png" alt="Страница 5">
+    <div class="nav"><button onclick="showPage(4)">Назад</button><button onclick="showPage(6)">Вперёд</button></div>
+  </div>
+
+  <div id="page6" class="page">
+    <h2>Часть 6</h2>
+    <img src="6.png" alt="Страница 6">
+    <div class="nav"><button onclick="showPage(5)">Назад</button><button onclick="showPage(7)">Вперёд</button></div>
+  </div>
+
+  <div id="page7" class="page">
+    <h2>Часть 7</h2>
+    <img src="7.png" alt="Страница 7">
+    <div class="nav"><button onclick="showPage(6)">Назад</button><button onclick="showPage(0)">В начало</button></div>
+  </div>
 
 <script>
 function showPage(n) {
